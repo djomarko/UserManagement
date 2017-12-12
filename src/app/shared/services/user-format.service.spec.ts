@@ -5,7 +5,7 @@ import { UserFormatService } from './user-format.service';
 import { RestUser } from '../models/rest-user';
 import { UserData } from '../models/user-data';
 
-fdescribe('UserFormatService', () => {
+describe('UserFormatService', () => {
 
   let service: UserFormatService;
 
