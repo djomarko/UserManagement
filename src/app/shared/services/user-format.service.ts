@@ -9,7 +9,7 @@ export class UserFormatService {
 
   format(rest: RestUser|any): UserData|any {
     if (!rest) {
-      return {};
+      return undefined;
     }
     const user = { ...rest};
 
@@ -31,8 +31,6 @@ export class UserFormatService {
           user.business_category[element.name.toLowerCase()] = element.value.replace(`${element.name}=`, '') ;
         });
     }
-
-
     return user;
   }
 

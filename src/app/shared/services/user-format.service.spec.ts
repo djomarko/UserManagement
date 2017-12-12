@@ -23,6 +23,10 @@ fdescribe('UserFormatService', () => {
   });
 
   describe('format()', () => {
+    it('should not accept null objects', () => {
+      expect(service.format(null)).toBeFalsy();
+      expect(service.format(undefined)).toBeFalsy();
+    });
     it('should format ad user', () => {
       const joc = jasmine.objectContaining;
       const adUser = require('./../stubs/adUser.json');
@@ -32,10 +36,14 @@ fdescribe('UserFormatService', () => {
           name: 'gavin.lai',
           uid: 'gavin.lai',
           active: true,
+          defaultGroup: 'bg-intranet'
         }));
+        // @ts-ignore
+        expect(user.groups).toEqual(jasmine.arrayContaining(['bg-intranet', 'sp-landcare']));
 
         expect(user.business_category).toEqual(joc({
-          bi: '200,ALL,ALL,BSPG,ALL,ALL,ALL,ALL'
+          bi: '200,ALL,ALL,BSPG,ALL,ALL,ALL,ALL',
+          jm_businesses: ''
         }));
     });
   });
