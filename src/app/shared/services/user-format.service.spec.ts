@@ -2,7 +2,8 @@ import { TestBed, inject } from '@angular/core/testing';
 
 import { UserFormatService } from './user-format.service';
 
-import adUser from '../stubs/adUser.json';
+import { RestUser } from '../models/rest-user';
+import { UserData } from '../models/user-data';
 
 fdescribe('UserFormatService', () => {
 
@@ -23,10 +24,18 @@ fdescribe('UserFormatService', () => {
 
   describe('format()', () => {
     it('should format ad user', () => {
-        const user = service.format(adUser);
+      const joc = jasmine.objectContaining;
+      const adUser = require('./../stubs/adUser.json');
+        const user = <UserData> service.format(<RestUser>adUser);
 
-        expect(user).toEqual(jasmine.objectContaining({
-          name: 'gavin.lai'
+        expect(user).toEqual(joc({
+          name: 'gavin.lai',
+          uid: 'gavin.lai',
+          active: true,
+        }));
+
+        expect(user.business_category).toEqual(joc({
+          bi: '200,ALL,ALL,BSPG,ALL,ALL,ALL,ALL'
         }));
     });
   });

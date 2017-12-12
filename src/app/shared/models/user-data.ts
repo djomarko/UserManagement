@@ -37,9 +37,9 @@ export interface UserData {
 
     // business categories
     business_category: {
-        jm_businesses: string[],
+        jm_businesses: string,
         orderware: string,
-        bi: string[],
+        bi: string,
         prism_account: string
     };
 }

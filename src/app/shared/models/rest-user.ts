@@ -14,22 +14,9 @@ export interface RestUser {
     groups: string[];
     privileges: string[];
 
-    // attributes
-    active: boolean;
-
-    title: string;
-    givenname: string;
-    surname: string;
-    email: string;
-    telephone: string;
-    facsimile: string;
-    mobile: string;
-
-    address: string;
-    suburb: string;
-    city: string;
-    state: string;
-    postal_code: string;
+    attributes: {
+        property: Property[];
+    };
 
     cost_centre: string;
 
@@ -37,10 +24,12 @@ export interface RestUser {
 
     // business categories
     business_category: {
-        jm_businesses: string[],
-        orderware: string,
-        bi: string[],
-        prism_account: string
+        property: Property[]
     };
 
+}
+
+interface Property {
+    name: string;
+    value: string;
 }
