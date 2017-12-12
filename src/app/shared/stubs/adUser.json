@@ -1,0 +1,220 @@
+{
+    "ad_user": true,
+    "admin": true,
+    "attributes": {
+        "property": [
+            {
+                "name": "title",
+                "value": "Manager Customer Solutions"
+            },
+            {
+                "name": "givenname",
+                "value": "Gavin"
+            },
+            {
+                "name": "surname",
+                "value": "Lai"
+            },
+            {
+                "name": "email",
+                "value": "Gavin.Lai@bluestargroup.co.nz"
+            },
+            {
+                "name": "telephone",
+                "value": "+64 9 477 4569"
+            },
+            {
+                "name": "facsimile",
+                "value": "+64 9 838 9924"
+            },
+            {
+                "name": "mobile",
+                "value": "+64 27 444 4127"
+            },
+            {
+                "name": "postaladdress",
+                "value": "address:|suburb:|city:|state:|country:"
+            },
+            {
+                "name": "active",
+                "value": ""
+            },
+            {
+                "name": "address",
+                "value": ""
+            },
+            {
+                "name": "suburb",
+                "value": ""
+            },
+            {
+                "name": "city",
+                "value": ""
+            },
+            {
+                "name": "state",
+                "value": ""
+            },
+            {
+                "name": "country",
+                "value": ""
+            },
+            {
+                "name": "postal_code",
+                "value": ""
+            },
+            {
+                "name": "cost_centre",
+                "value": ""
+            },
+            {
+                "name": "ext_ref",
+                "value": ""
+            }
+        ]
+    },
+    "business_category": {
+        "property": [
+            {
+                "name": "JM_BUSINESSES",
+                "value": "JM_BUSINESSES="
+            },
+            {
+                "name": "ORDERWARE",
+                "value": "ORDERWARE="
+            },
+            {
+                "name": "BI",
+                "value": "BI=200,ALL,ALL,BSPG,ALL,ALL,ALL,ALL"
+            },
+            {
+                "name": "PRISM_ACCOUNT",
+                "value": "PRISM_ACCOUNT="
+            }
+        ]
+    },
+    "cn": "gavin.lai",
+    "company": "Blue Star Print Group",
+    "defaultGroup": "bg-intranet",
+    "dn": "cn=gavin.lai,cn=users,dc=bluestar",
+    "dsf": null,
+    "groups": [
+        "bg-intranet",
+        "fm-contactenergy",
+        "nz-bluestar-intranet",
+        "sp-landcare",
+        "wa-airnz",
+        "wa-amp",
+        "wa-aucklandtransport",
+        "wa-bnz",
+        "wa-bunnings",
+        "wa-db",
+        "wa-flexicards",
+        "wa-iag",
+        "wa-iag_ami",
+        "wa-ricoh",
+        "wa-tower",
+        "wa-vector",
+        "wa-vodafone",
+        "wa-westpac",
+        "ww-aa",
+        "ww-acc",
+        "ww-anz",
+        "ww-crs",
+        "ww-crsr",
+        "ww-dia",
+        "ww-doc",
+        "ww-esr",
+        "ww-hpa",
+        "ww-hpa-he",
+        "ww-intranet",
+        "ww-kiwirail",
+        "ww-linz",
+        "ww-linzmc",
+        "ww-maf",
+        "ww-meridian",
+        "ww-moe",
+        "ww-moh",
+        "ww-msd",
+        "ww-msd_cyf",
+        "ww-nzdf",
+        "ww-nzp",
+        "ww-nzracingboard",
+        "ww-orbit",
+        "ww-statsnz",
+        "ww-tpk",
+        "ww-worksafe"
+    ],
+    "name": "gavin.lai",
+    "orderware": true,
+    "pagedna": false,
+    "prism": {
+        "name": "PDS",
+        "rmCust": "BSPG",
+        "error": "no_user",
+        "profile": [],
+        "attributes": {
+            "property": []
+        }
+    },
+    "privileges": [
+        "cn=action,cn=asset,cn=bs_application_roles,cn=nz_portal.111230.112646.425000000,cn=groups,dc=bluestar",
+        "cn=brand,cn=asset,cn=bs_application_roles,cn=nz_portal.111230.112646.425000000,cn=groups,dc=bluestar",
+        "cn=bsgintranet_administration_content,cn=bsgintranet_administration,cn=bsgintranet,cn=bs_privileged_groups,cn=nz_portal.111230.112646.425000000,cn=groups,dc=bluestar",
+        "cn=bsgintranet_administration_file,cn=bsgintranet_administration,cn=bsgintranet,cn=bs_privileged_groups,cn=nz_portal.111230.112646.425000000,cn=groups,dc=bluestar",
+        "cn=bsgintranet_administration_group,cn=bsgintranet_administration,cn=bsgintranet,cn=bs_privileged_groups,cn=nz_portal.111230.112646.425000000,cn=groups,dc=bluestar",
+        "cn=bsgintranet_blog,cn=bsgintranet,cn=bs_privileged_groups,cn=nz_portal.111230.112646.425000000,cn=groups,dc=bluestar",
+        "cn=bsgintranet_dashboard_customer,cn=bsgintranet,cn=bs_privileged_groups,cn=nz_portal.111230.112646.425000000,cn=groups,dc=bluestar",
+        "cn=bsgintranet_dashboard_group,cn=bsgintranet,cn=bs_privileged_groups,cn=nz_portal.111230.112646.425000000,cn=groups,dc=bluestar",
+        "cn=bsgintranet_job,cn=bsgintranet,cn=bs_privileged_groups,cn=nz_portal.111230.112646.425000000,cn=groups,dc=bluestar",
+        "cn=bsgnz_catalog_external,cn=bsgnz_catalog,cn=bsgnz,cn=bs_privileged_groups,cn=nz_portal.111230.112646.425000000,cn=groups,dc=bluestar",
+        "cn=bsgnz_files_folder_brand,cn=bsgnz_files,cn=bsgnz,cn=bs_privileged_groups,cn=nz_portal.111230.112646.425000000,cn=groups,dc=bluestar",
+        "cn=bsgnz_files_folder_confidential,cn=bsgnz_files,cn=bsgnz,cn=bs_privileged_groups,cn=nz_portal.111230.112646.425000000,cn=groups,dc=bluestar",
+        "cn=bsgnz_files_folder_documents,cn=bsgnz_files,cn=bsgnz,cn=bs_privileged_groups,cn=nz_portal.111230.112646.425000000,cn=groups,dc=bluestar",
+        "cn=bsgnz_files_folder_jobs,cn=bsgnz_files,cn=bsgnz,cn=bs_privileged_groups,cn=nz_portal.111230.112646.425000000,cn=groups,dc=bluestar",
+        "cn=bsgnz_files_folder_public,cn=bsgnz_files,cn=bsgnz,cn=bs_privileged_groups,cn=nz_portal.111230.112646.425000000,cn=groups,dc=bluestar",
+        "cn=bsgnz_files_folder_quotes,cn=bsgnz_files,cn=bsgnz,cn=bs_privileged_groups,cn=nz_portal.111230.112646.425000000,cn=groups,dc=bluestar",
+        "cn=bsgnz_files_folder_specs,cn=bsgnz_files,cn=bsgnz,cn=bs_privileged_groups,cn=nz_portal.111230.112646.425000000,cn=groups,dc=bluestar",
+        "cn=bsgnz_files_type_image,cn=bsgnz_files,cn=bsgnz,cn=bs_privileged_groups,cn=nz_portal.111230.112646.425000000,cn=groups,dc=bluestar",
+        "cn=bsgnz_files_type_office,cn=bsgnz_files,cn=bsgnz,cn=bs_privileged_groups,cn=nz_portal.111230.112646.425000000,cn=groups,dc=bluestar",
+        "cn=bsgnz_files_type_pdf,cn=bsgnz_files,cn=bsgnz,cn=bs_privileged_groups,cn=nz_portal.111230.112646.425000000,cn=groups,dc=bluestar",
+        "cn=bsgnz_products_ebooks,cn=bsgnz_products,cn=bsgnz,cn=bs_privileged_groups,cn=nz_portal.111230.112646.425000000,cn=groups,dc=bluestar",
+        "cn=bsgnz_products_reports_s,cn=bsgnz_products,cn=bsgnz,cn=bs_privileged_groups,cn=nz_portal.111230.112646.425000000,cn=groups,dc=bluestar",
+        "cn=bsgnz_quote_request_complex,cn=bsgnz_quotes,cn=bsgnz,cn=bs_privileged_groups,cn=nz_portal.111230.112646.425000000,cn=groups,dc=bluestar",
+        "cn=bsgnz_website_admin,cn=bsgnz_website,cn=bsgnz,cn=bs_privileged_groups,cn=nz_portal.111230.112646.425000000,cn=groups,dc=bluestar",
+        "cn=bsgnz_website_customer,cn=bsgnz_website,cn=bsgnz,cn=bs_privileged_groups,cn=nz_portal.111230.112646.425000000,cn=groups,dc=bluestar",
+        "cn=bsgnz_website_groups,cn=bsgnz_website,cn=bsgnz,cn=bs_privileged_groups,cn=nz_portal.111230.112646.425000000,cn=groups,dc=bluestar",
+        "cn=confidential,cn=asset,cn=bs_application_roles,cn=nz_portal.111230.112646.425000000,cn=groups,dc=bluestar",
+        "cn=detail,cn=job,cn=bs_application_roles,cn=nz_portal.111230.112646.425000000,cn=groups,dc=bluestar",
+        "cn=detail,cn=product,cn=bs_application_roles,cn=nz_portal.111230.112646.425000000,cn=groups,dc=bluestar",
+        "cn=detail,cn=quote,cn=bs_application_roles,cn=nz_portal.111230.112646.425000000,cn=groups,dc=bluestar",
+        "cn=detail,cn=salesorder,cn=bs_application_roles,cn=nz_portal.111230.112646.425000000,cn=groups,dc=bluestar",
+        "cn=list,cn=accounts,cn=bs_application_roles,cn=nz_portal.111230.112646.425000000,cn=groups,dc=bluestar",
+        "cn=list,cn=job,cn=bs_application_roles,cn=nz_portal.111230.112646.425000000,cn=groups,dc=bluestar",
+        "cn=list,cn=product,cn=bs_application_roles,cn=nz_portal.111230.112646.425000000,cn=groups,dc=bluestar",
+        "cn=list,cn=quote,cn=bs_application_roles,cn=nz_portal.111230.112646.425000000,cn=groups,dc=bluestar",
+        "cn=show_tree,cn=asset,cn=bs_application_roles,cn=nz_portal.111230.112646.425000000,cn=groups,dc=bluestar",
+        "cn=specs,cn=asset,cn=bs_application_roles,cn=nz_portal.111230.112646.425000000,cn=groups,dc=bluestar",
+        "cn=view_actions,cn=detail,cn=job,cn=bs_application_roles,cn=nz_portal.111230.112646.425000000,cn=groups,dc=bluestar",
+        "cn=view_actions,cn=detail,cn=product,cn=bs_application_roles,cn=nz_portal.111230.112646.425000000,cn=groups,dc=bluestar",
+        "cn=view_actions,cn=list,cn=accounts,cn=bs_application_roles,cn=nz_portal.111230.112646.425000000,cn=groups,dc=bluestar",
+        "cn=view_actions,cn=list,cn=job,cn=bs_application_roles,cn=nz_portal.111230.112646.425000000,cn=groups,dc=bluestar",
+        "cn=view_actions,cn=list,cn=product,cn=bs_application_roles,cn=nz_portal.111230.112646.425000000,cn=groups,dc=bluestar",
+        "cn=view_actions,cn=list,cn=quote,cn=bs_application_roles,cn=nz_portal.111230.112646.425000000,cn=groups,dc=bluestar",
+        "cn=view_all,cn=list,cn=helpdesk,cn=bs_application_roles,cn=nz_portal.111230.112646.425000000,cn=groups,dc=bluestar",
+        "cn=view_all,cn=list,cn=job,cn=bs_application_roles,cn=nz_portal.111230.112646.425000000,cn=groups,dc=bluestar",
+        "cn=view_all,cn=list,cn=product,cn=bs_application_roles,cn=nz_portal.111230.112646.425000000,cn=groups,dc=bluestar",
+        "cn=view_all,cn=list,cn=quote,cn=bs_application_roles,cn=nz_portal.111230.112646.425000000,cn=groups,dc=bluestar",
+        "cn=view_approvals,cn=detail,cn=salesorder,cn=bs_application_roles,cn=nz_portal.111230.112646.425000000,cn=groups,dc=bluestar",
+        "cn=view_content,cn=detail,cn=job,cn=bs_application_roles,cn=nz_portal.111230.112646.425000000,cn=groups,dc=bluestar",
+        "cn=view_content,cn=detail,cn=product,cn=bs_application_roles,cn=nz_portal.111230.112646.425000000,cn=groups,dc=bluestar",
+        "cn=view_content,cn=detail,cn=quote,cn=bs_application_roles,cn=nz_portal.111230.112646.425000000,cn=groups,dc=bluestar",
+        "cn=view_contest,cn=detail,cn=job,cn=bs_application_roles,cn=nz_portal.111230.112646.425000000,cn=groups,dc=bluestar",
+        "cn=view_contest,cn=detail,cn=quote,cn=bs_application_roles,cn=nz_portal.111230.112646.425000000,cn=groups,dc=bluestar",
+        "cn=view_external_app,cn=home,cn=bs_application_roles,cn=nz_portal.111230.112646.425000000,cn=groups,dc=bluestar",
+        "cn=view_workflow,cn=detail,cn=job,cn=bs_application_roles,cn=nz_portal.111230.112646.425000000,cn=groups,dc=bluestar",
+        "cn=view_workflow,cn=detail,cn=product,cn=bs_application_roles,cn=nz_portal.111230.112646.425000000,cn=groups,dc=bluestar",
+        "cn=view_workflow,cn=detail,cn=quote,cn=bs_application_roles,cn=nz_portal.111230.112646.425000000,cn=groups,dc=bluestar"
+    ],
+    "uid": "gavin.lai"
+}

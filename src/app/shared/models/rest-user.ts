@@ -1,4 +1,4 @@
-export interface UserData {
+export interface RestUser {
     ad_user: boolean;
     orderware: boolean;
     pagedna: boolean;
@@ -42,4 +42,5 @@ export interface UserData {
         bi: string[],
         prism_account: string
     };
+
 }
