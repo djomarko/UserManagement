@@ -11,20 +11,23 @@ export class UserFormatService {
     if (!rest) {
       return undefined;
     }
-    const user = { ...rest};
+    const user = {
+      attributes: {},
+      business_category: {},
+      ...rest
+    };
 
     // convert the attributes
     if (rest.attributes && rest.attributes.property) {
       rest.attributes.property
         .forEach(element => {
-          user[element.name] = element.value;
+          user.attributes[element.name] = element.value;
         });
     }
 
-    user.active = user.active !== 'false';
+    user.attributes.active = user.attributes.active !== 'false';
 
     // convert business categories
-    user.business_category = {};
     if (rest.business_category && rest.business_category.property) {
       rest.business_category.property
         .forEach(element => {
@@ -34,9 +37,23 @@ export class UserFormatService {
     return user;
   }
 
-  parse(user: UserData): RestUser|any {
+  parse(user: UserData|any): RestUser|any {
 
-    const rest = { ...user};
+    if (!user) {
+      return null;
+    }
+
+    const rest = {
+      attributes: {},
+      ...user
+    };
+
+
+    rest.attributes.active = rest.attributes.active ? '' : 'false';
+
+    rest.attributes.forEach((item) => {
+      rest.attributes.property = {name: item};
+    });
 
     return rest;
   }

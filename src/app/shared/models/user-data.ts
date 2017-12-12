@@ -15,26 +15,27 @@ export interface UserData {
     privileges: string[];
 
     // attributes
-    active: boolean;
+    attributes: {
+        active: boolean;
 
-    title: string;
-    givenname: string;
-    surname: string;
-    email: string;
-    telephone: string;
-    facsimile: string;
-    mobile: string;
+        title: string;
+        givenname: string;
+        surname: string;
+        email: string;
+        telephone: string;
+        facsimile: string;
+        mobile: string;
 
-    address: string;
-    suburb: string;
-    city: string;
-    state: string;
-    postal_code: string;
+        address: string;
+        suburb: string;
+        city: string;
+        state: string;
+        postal_code: string;
 
-    cost_centre: string;
+        cost_centre: string;
 
-    ext_ref: string;
-
+        ext_ref: string;
+    }
     // business categories
     business_category: {
         jm_businesses: string,

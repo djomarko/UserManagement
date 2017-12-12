@@ -35,17 +35,25 @@ fdescribe('UserFormatService', () => {
         expect(user).toEqual(joc({
           name: 'gavin.lai',
           uid: 'gavin.lai',
-          active: true,
           defaultGroup: 'bg-intranet'
         }));
         // @ts-ignore
         expect(user.groups).toEqual(jasmine.arrayContaining(['bg-intranet', 'sp-landcare']));
 
+        expect(user.attributes).toEqual(joc({
+          active: true,
+          mobile: '+64 27 444 4127'
+        }));
         expect(user.business_category).toEqual(joc({
           bi: '200,ALL,ALL,BSPG,ALL,ALL,ALL,ALL',
           jm_businesses: ''
         }));
     });
   });
-
+  describe('parse()', () => {
+    it('should not accept null objects', () => {
+      expect(service.parse(null)).toBeFalsy();
+      expect(service.parse(undefined)).toBeFalsy();
+    });
+  });
 });
