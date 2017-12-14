@@ -1,14 +1,16 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { DetailsFormComponent } from './details-form.component';
+import { FormsModule } from '@angular/forms';
 
-describe('DetailsFormComponent', () => {
+fdescribe('DetailsFormComponent', () => {
   let component: DetailsFormComponent;
   let fixture: ComponentFixture<DetailsFormComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ DetailsFormComponent ]
+      declarations: [ DetailsFormComponent ],
+      imports: [FormsModule]
     })
     .compileComponents();
   }));
@@ -26,8 +28,13 @@ describe('DetailsFormComponent', () => {
   describe(`edit mode (where username can't be changed)`, () => {
     it(`should disalbe the username field when it's set to true`, () => {
       component.editMode = true;
-
-      fixture.qu
+      fixture.detectChanges();
+      console.log($(`[name='uid']`));
+      expect($(`[name='uid']`).isEnabled()).toBeFalsy();
     });
   });
+
+  const $ = (query: string) => {
+    return fixture.nativeElement.querySelector(query);
+  };
 });
