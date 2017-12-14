@@ -1,20 +1,24 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { NormalUserPageComponent } from './pages/normal-user-page/normal-user-page.component';
+import { DetailsFormComponent } from './components/details-form/details-form.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    NormalUserPageComponent
+    NormalUserPageComponent,
+    DetailsFormComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    FormsModule,
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

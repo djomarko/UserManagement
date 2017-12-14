@@ -3,9 +3,10 @@ export interface UserData {
     orderware: boolean;
     pagedna: boolean;
 
+    uid: string;
+    password?: string;
     cn: string;
     dn: string;
-    uid: string;
     name: string;
     company: string;
     defaultGroup: string;
@@ -30,12 +31,13 @@ export interface UserData {
         suburb: string;
         city: string;
         state: string;
+        country: string;
         postal_code: string;
 
         cost_centre: string;
 
         ext_ref: string;
-    }
+    };
     // business categories
     business_category: {
         jm_businesses: string,

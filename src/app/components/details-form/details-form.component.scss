@@ -1,0 +1,5 @@
+@import 'variables';
+
+input[required] {
+    background-color: $required-color;
+}
