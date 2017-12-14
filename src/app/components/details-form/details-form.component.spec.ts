@@ -22,4 +22,12 @@ describe('DetailsFormComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  describe(`edit mode (where username can't be changed)`, () => {
+    it(`should disalbe the username field when it's set to true`, () => {
+      component.editMode = true;
+
+      fixture.qu
+    });
+  });
 });
