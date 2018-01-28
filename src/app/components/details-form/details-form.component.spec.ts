@@ -1,26 +1,29 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { FormsModule } from '@angular/forms';
 
 import { DetailsFormComponent } from './details-form.component';
-import { FormsModule } from '@angular/forms';
-import { By } from '@angular/platform-browser';
 
-fdescribe('DetailsFormComponent', () => {
+describe('DetailsFormComponent', () => {
   let component: DetailsFormComponent;
   let fixture: ComponentFixture<DetailsFormComponent>;
-  let el: HTMLElement;
+
+  const $ = (query: string): HTMLElement => {
+    return fixture.nativeElement.querySelector(query);
+  };
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ DetailsFormComponent ],
+      declarations: [DetailsFormComponent],
       imports: [FormsModule]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {
     fixture = TestBed.createComponent(DetailsFormComponent);
     component = fixture.componentInstance;
-    el = fixture.debugElement.nativeElement;
+    fixture.detectChanges();
+
   });
 
   it('should create', () => {
@@ -30,23 +33,24 @@ fdescribe('DetailsFormComponent', () => {
   describe(`edit mode (where username can't be changed)`, () => {
     it(`should disalbe the username field when it's in edit current user mode`, () => {
       component.editMode = true;
-        expect(el.querySelector(`[name='uid']`).disabled).toBeTruthy();
+      fixture.detectChanges();
+      expect($(`[name='uid']`).getAttribute('disabled')).toBe('true');
     });
     it(`should enable the username field when it's in create new user`, () => {
       component.editMode = false;
-      expect($(`[name='uid']`).disabled).toBeFalsy();
+      fixture.detectChanges();
+      console.log($(`[name='uid']`));
+      expect($(`[name='uid']`).getAttribute('disabled')).toBe('false');
     });
   });
 
   describe('change password mode', () => {
     it('should not show a password input field if user is a ad user', () => {
-      component.passwordUpdateMode = true;
-      // fixture.detectChanges();
-      expect(el.querySelector(`[name='password']`)).toBeFalsy();
+      component.passwordUpdateMode = false;
+
+      fixture.detectChanges();
+      console.log($(`[name='password']`));
+      expect($(`[name='password']`)).toBeFalsy();
     });
   });
-
-  const $ = (query: string) => {
-    return fixture.debugElement.query(By.css(query)).nativeElement;
-  };
 });

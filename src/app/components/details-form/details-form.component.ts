@@ -13,17 +13,18 @@ export class DetailsFormComponent implements OnInit {
   passwordUpdateMode = true;
 
   constructor() {
-   }
+  }
 
   ngOnInit() {
-    // initalise attibutes in case they don't exist
+    // initalise attributes in case they don't exist
     this.user = {
-      attributes: {},
+      attributes: {
+        active: true
+      },
       ...this.user
     };
 
     this.editMode = !!this.user.uid;
     this.passwordUpdateMode = !this.user.ad_user;
   }
-
 }
