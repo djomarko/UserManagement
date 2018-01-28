@@ -34,13 +34,13 @@ describe('DetailsFormComponent', () => {
     it(`should disalbe the username field when it's in edit current user mode`, () => {
       component.editMode = true;
       fixture.detectChanges();
-      expect($(`[name='uid']`).getAttribute('disabled')).toBe('true');
+      expect($('#uid').getAttribute('disabled')).toBe('true');
     });
     it(`should enable the username field when it's in create new user`, () => {
       component.editMode = false;
       fixture.detectChanges();
-      console.log($(`[name='uid']`));
-      expect($(`[name='uid']`).getAttribute('disabled')).toBe('false');
+      console.log($('#uid'));
+      expect($('#uid').getAttribute('disabled')).toBe('false');
     });
   });
 
@@ -49,8 +49,15 @@ describe('DetailsFormComponent', () => {
       component.passwordUpdateMode = false;
 
       fixture.detectChanges();
-      console.log($(`[name='password']`));
-      expect($(`[name='password']`)).toBeFalsy();
+      console.log($('#password'));
+      expect($('#password')).toBeFalsy();
+    });
+  });
+
+  describe('countries', () => {
+    it('should should bring back a list of countries', () => {
+      expect(component.countries).toEqual(
+        jasmine.arrayContaining(['Australia', 'New Zealand']));
     });
   });
 });

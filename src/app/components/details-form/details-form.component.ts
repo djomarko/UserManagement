@@ -1,5 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
+
 import { UserData } from '../../shared/models/user-data';
+import * as countryJson from './countries.json';
 
 @Component({
   selector: 'app-details-form',
@@ -12,19 +14,21 @@ export class DetailsFormComponent implements OnInit {
   editMode = false;
   passwordUpdateMode = true;
 
-  constructor() {
-  }
-
   ngOnInit() {
     // initalise attributes in case they don't exist
     this.user = {
       attributes: {
-        active: true
+        active: true,
+        country: 'New Zealand'
       },
       ...this.user
     };
 
     this.editMode = !!this.user.uid;
     this.passwordUpdateMode = !this.user.ad_user;
+  }
+
+  public get countries() {
+    return (<any> countryJson).countries.map(country => country.name);
   }
 }
